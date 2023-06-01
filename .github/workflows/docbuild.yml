@@ -44,10 +44,5 @@ jobs:
                 git config --local user.email "test@github.com"
                 git config --local user.name "testdoc"
                 git commit -m "deploy docs"
-                echo "---------------------------"
-                git remote add origin https://github.com/GowriShankarG/TestReadDocs.git
-                git remote -v
-                git push --set-upstream origin master
-                echo "---------------------------"
-
+ 
 
