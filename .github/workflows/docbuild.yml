@@ -9,7 +9,7 @@ on:
 jobs:
 
    build_doc_with_sphinx:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       env:
          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
