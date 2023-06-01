@@ -44,12 +44,10 @@ jobs:
                 git config --local user.email "test@github.com"
                 git config --local user.name "testdoc"
                 git commit -m "deploy docs"
-
-
-
-         - name: checkout as new branch
-           run: |
-                cd docs/build/html
+                echo "---------------------------"
                 git branch testDoc
                 git checkout testDoc
                 git push -u orgin testDoc
+                echo "---------------------------"
+
+
