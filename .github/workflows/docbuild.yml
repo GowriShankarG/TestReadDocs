@@ -47,7 +47,7 @@ jobs:
                 echo "---------------------------"
                 git remote add origin https://github.com/GowriShankarG/TestReadDocs.git
                 git remote -v
-                git push 
+                git push --set-upstream origin master
                 echo "---------------------------"
 
 
