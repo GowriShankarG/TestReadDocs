@@ -7,15 +7,15 @@ on:
    push:
       branches: [ main ]
 
-
 jobs:
-  build_doc_with_sphinx:
+
+   build_doc_with_sphinx:
       run-on: ubuntu-latest
       env:
          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
 
-     steps:
+      steps:
          -name: checkout the repo
           uses: action/checkout@v3
 
