@@ -47,6 +47,8 @@ jobs:
                 echo "---------------------------"
                 git branch testDoc
                 git checkout testDoc
+
+                git remote add origin https://github.com/GowriShankarG/TestReadDocs
                 git push -u orgin testDoc
                 echo "---------------------------"
 
