@@ -29,8 +29,18 @@ jobs:
                 python -m pip install sphinx-rtd-theme
                 python -m pip install sphinx-autoapi
 
-         - name: install dependencies python
-           run: |
 
+         - name: build documents using Make
+           run: |
                 make -C docs clean
                 make -C docs html
+
+         - name: initilize git and commit the generated files
+           run: |
+                cd docs/build/html
+                git init
+                touch .nojekyll
+                git add -A
+                git config --local user.email "test@github.com"
+                git config --local user.name "testdoc"
+                git commit -m "deploy docs"
