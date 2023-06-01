@@ -45,11 +45,9 @@ jobs:
                 git config --local user.name "testdoc"
                 git commit -m "deploy docs"
                 echo "---------------------------"
-                git branch testDoc
-                git checkout testDoc
-
                 git remote add origin https://github.com/GowriShankarG/TestReadDocs.git
-                git push -u orgin testDoc
+                git remove -v
+                git push 
                 echo "---------------------------"
 
 
