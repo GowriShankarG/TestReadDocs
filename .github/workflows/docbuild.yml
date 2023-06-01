@@ -1,0 +1,26 @@
+name : Test document with sphinx
+
+#exeuction of workflow
+#
+
+on:
+   push:
+      branches: [ main ]
+
+
+jobs:
+  build_doc_with_sphinx:
+      run-on: ubuntu-latest
+      env:
+         GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+
+     steps:
+         -name: checkout the repo
+          uses: action/checkout@v3
+
+         -name: setup python 
+          uses: actions/setup-python
+          with: 
+              python-version: 3.9
+        
