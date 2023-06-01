@@ -53,5 +53,3 @@ jobs:
                 git branch testDoc
                 git checkout testDoc
                 git push -u orgin testDoc
-           with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
