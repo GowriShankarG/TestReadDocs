@@ -16,8 +16,8 @@ This is an ordinary paragraph, introducing a block quote.
    :caption: Contents:
    :hidden:
    
-   projview
-   license
+   /projview
+   /license
 
 
 Indices and tables
